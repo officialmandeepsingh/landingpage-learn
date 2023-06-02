@@ -8,6 +8,7 @@ import com.varabyte.kobweb.compose.ui.Modifier
 import com.varabyte.kobweb.compose.ui.modifiers.fillMaxSize
 import com.varabyte.kobweb.core.Page
 import org.jetbrains.compose.web.dom.Text
+import org.mandeep.landingpage.sections.AboutMeSection
 import org.mandeep.landingpage.sections.MainSection
 
 @Page
@@ -20,5 +21,6 @@ fun HomePage() {
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
         MainSection()
+        AboutMeSection()
     }
 }
