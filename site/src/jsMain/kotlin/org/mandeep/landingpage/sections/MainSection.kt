@@ -50,8 +50,8 @@ fun MainContent() {
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.SpaceBetween,
         horizontalAlignment = Alignment.CenterHorizontally
-    ){
-        Header(){}
+    ) {
+        Header() {}
         Column(
             modifier = Modifier.fillMaxSize(),
             verticalArrangement = Arrangement.Bottom,
@@ -70,6 +70,7 @@ fun MainContent() {
         }
     }
 }
+
 @Composable
 fun MainImage() {
     Column(
@@ -100,7 +101,7 @@ fun MainText(breakpoint: Breakpoint) {
                 attrs = Modifier
                     .margin(topBottom = 0.px)
                     .fontFamily(FONT_FAMILY)
-                    .fontSize(if(breakpoint >= Breakpoint.LG) 45.px else 20.px)
+                    .fontSize(if (breakpoint >= Breakpoint.LG) 45.px else 20.px)
                     .fontWeight(FontWeight.Normal)
                     .color(Theme.Primary.rgb)
                     .toAttrs()
@@ -111,7 +112,7 @@ fun MainText(breakpoint: Breakpoint) {
                 attrs = Modifier
                     .margin(top = 20.px, bottom = 0.px)
                     .fontFamily(FONT_FAMILY)
-                    .fontSize(if(breakpoint >= Breakpoint.LG) 68.px else 40.px)
+                    .fontSize(if (breakpoint >= Breakpoint.LG) 68.px else 40.px)
                     .fontWeight(FontWeight.Bolder)
                     .color(Theme.Secondary.rgb)
                     .toAttrs()
